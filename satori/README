@@ -1,6 +1,8 @@
-`wget https://github.com/soulfly07/test/raw/main/satori/1_docker_satori_install.sh && chmod +x 1_docker_satori_install.sh && ./1_docker_satori_install.sh`
-`wget https://github.com/soulfly07/test/raw/main/satori/2_satori_install.sh && chmod +x 2_satori_install.sh && ./1_docker_satori_install.sh`
-лог - ```journalctl -fu satori.service```
+wget https://github.com/soulfly07/test/raw/main/satori/1_docker_satori_install.sh && chmod +x 1_docker_satori_install.sh && ./1_docker_satori_install.sh
+
+wget https://github.com/soulfly07/test/raw/main/satori/2_satori_install.sh && chmod +x 2_satori_install.sh && ./1_docker_satori_install.sh
+
+лог:              journalctl -fu satori.service
 
 
 автостарт:        sudo systemctl enable satori.service
