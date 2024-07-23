@@ -1,14 +1,14 @@
-`wget https://github.com/soulfly07/test/raw/main/satori/1_docker_satori_install.sh && chmod +x 1_docker_satori_install.sh && ./1_docker_satori_install.sh`
-```wget https://github.com/soulfly07/test/raw/main/satori/2_satori_install.sh && chmod +x 2_satori_install.sh && ./1_docker_satori_install.sh```
+wget https://github.com/soulfly07/test/raw/main/satori/1_docker_satori_install.sh && chmod +x 1_docker_satori_install.sh && ./1_docker_satori_install.sh
+wget https://github.com/soulfly07/test/raw/main/satori/2_satori_install.sh && chmod +x 2_satori_install.sh && ./1_docker_satori_install.sh
 лог - ```ournalctl -fu satori.service```
 
 
-автостарт  sudo systemctl enable satori.service
-запуск   sudo systemctl start satori.service
-остановить   sudo systemctl stop satori.service
-перезапуск   sudo systemctl restart satori.service
-убрать автостарт  sudo systemctl disable satori.service
+автостарт:        sudo systemctl enable satori.service
+запуск:           sudo systemctl start satori.service
+остановить:       sudo systemctl stop satori.service
+перезапуск:       sudo systemctl restart satori.service
+убрать автостарт: sudo systemctl disable satori.service
 
 If you want to limit the resource usage of Satori, you can do so using Docker. Here is an example that uses no more than half of the CPUs on your machine and sets a memory limit to 512 MB:
-$docker update --cpus=".5" --memory="512m" satorineuron
+                  docker update --cpus=".5" --memory="512m" satorineuron
 This command will ensure that Satori runs with the specified resource constraints.
