@@ -1,4 +1,4 @@
-wget --no-cache -O - https://github.com/soulfly07/test/raw/main/quil/balance.sh | bash balance.sh 30
+wget --no-cache -O balance.sh https://github.com/soulfly07/test/raw/main/quil/balance.sh 30 && sudo bash balance.sh
 
 balance.sh вводится с параметром в секундах 
 пример: 
