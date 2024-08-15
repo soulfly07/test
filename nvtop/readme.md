@@ -5,5 +5,5 @@ wget -O nvtop https://github.com/soulfly07/test/raw/main/nvtop/nvtop && mv nvtop
 
 потом просто запускаем 
 ```
-nvtool
+nvtop
 ```
