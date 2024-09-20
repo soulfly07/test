@@ -80,23 +80,25 @@ eval $(jq -r '. | "ETHEREUM_ADDRESS=\(.ethereum_address)\nNETWORK=\(.network)\nP
 export POPM_BTC_PRIVKEY=$PRIVATE_KEY
 export POPM_STATIC_FEE=50
 export POPM_BFG_URL=wss://testnet.rpc.hemi.network/v1/ws/public
+screen -dmS hemi ./popmd
 EOF
 
 chmod +x hemi-start-node.sh
-
+./hemi-start-node.sh
 echo ""
+show "нода уже запущена в скрине"
 echo ""
-echo "Что бы установить ноду в автостарт CRON после ребута: "
+show "Что бы установить ноду в автостарт CRON после ребута: "
 echo "crontab -e"
-echo "выбираем 1, в самом низу добавляем строку"
+show "выбираем 1, в самом низу добавляем строку"
 echo "@reboot sleep 10 && /root/Hemi-Node/heminetwork_v0.4.3_linux_amd64/hemi-start-node.sh"
-echo "Ctrl+O , Enter , Ctrl+x"
+show "Ctrl+O , Enter , Ctrl+x"
 echo ""
 echo ""
 
 
 show "1. Заходи в дискорд Hemi 'https://discord.gg/hemixyz' и запроси tBTC в кошельке на этот адрес: $PUBKEY_HASH"
 show "2. Проверь здесь что Биточек пришел 'https://mempool.space/testnet/address/$PUBKEY_HASH'"
-show "3. Создай новую сессию screen и запусти в ней .popmd"
+#show "3. Создай новую сессию screen и запусти в ней .popmd"
 echo ""
 show "4. Подпишись на канал https://t.me/shishka_crypto <3"
