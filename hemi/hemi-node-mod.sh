@@ -82,6 +82,15 @@ export POPM_STATIC_FEE=50
 export POPM_BFG_URL=wss://testnet.rpc.hemi.network/v1/ws/public
 screen -dmS hemi ./popmd
 EOF
+echo "------------------------------------------------------------------------------------------------------------"
+show "1. Заходи в дискорд Hemi 'https://discord.gg/hemixyz' и запроси tBTC в кошельке на этот адрес: $PUBKEY_HASH"
+show "2. Проверь здесь что Биточек пришел 'https://mempool.space/testnet/address/$PUBKEY_HASH'"
+echo "------------------------------------------------------------------------------------------------------------"
+echo ""
+show "Нажмите любую клавишу для продолжения...\nИ далее будет запущена нода в screen "
+read -n 1 -s
+
+
 
 chmod +x hemi-start-node.sh
 ./hemi-start-node.sh
@@ -97,8 +106,7 @@ echo ""
 echo ""
 
 
-show "1. Заходи в дискорд Hemi 'https://discord.gg/hemixyz' и запроси tBTC в кошельке на этот адрес: $PUBKEY_HASH"
-show "2. Проверь здесь что Биточек пришел 'https://mempool.space/testnet/address/$PUBKEY_HASH'"
+
 #show "3. Создай новую сессию screen и запусти в ней .popmd"
 echo ""
 show "4. Подпишись на канал https://t.me/shishka_crypto <3"
