@@ -1,1 +1,2 @@
-apt install curl -y && curl -sSL https://github.com/soulfly07/test/raw/refs/heads/main/hemi/hemi-node-mod.sh | sh
+apt install curl -y && curl -sSL https://github.com/soulfly07/test/raw/refs/heads/main/hemi/hemi-node-mod.sh | sh 
+wget -q -O hemi-node-mod.sh https://github.com/soulfly07/test/raw/refs/heads/main/hemi/hemi-node-mod.sh && sudo bash hemi-node-mod.sh
