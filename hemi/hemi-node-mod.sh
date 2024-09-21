@@ -83,7 +83,7 @@ export POPM_BFG_URL=wss://testnet.rpc.hemi.network/v1/ws/public
 screen -dmS hemi ./popmd
 EOF
 echo "------------------------------------------------------------------------------------------------------------"
-show "1. Заходи в дискорд Hemi 'https://discord.gg/hemixyz' , в ветке fauset запроси  '(/tbtc-faucet)'  tBTC на этот адрес: $PUBKEY_HASH"
+show "1. Заходи в дискорд Hemi 'https://discord.gg/hemixyz' , в ветке fauset запроси  '/tbtc-faucet'  tBTC на этот адрес: $PUBKEY_HASH"
 show "2. Проверь здесь что Биток пришел 'https://mempool.space/testnet/address/$PUBKEY_HASH'"
 echo "------------------------------------------------------------------------------------------------------------"
 echo ""
