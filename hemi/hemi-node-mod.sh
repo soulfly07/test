@@ -24,7 +24,7 @@ show "|_| \_| \___/ |____/ |_____||____/              "
 
 apt update
 apt install zip screen htop jq -y
-
+screen -S hemi -X quit
 # Твоя команда с использованием функции show
 show "Создание директории и переход в нее"
 cd /root/
