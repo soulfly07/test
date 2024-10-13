@@ -40,6 +40,10 @@ FILES=(
     "${BASE_URL}.dgst.sig.16"
 )
 
+# Оставнока ceremonyclient
+echo "Оставнока ceremonyclient ..."
+systemctl stop ceremonyclient
+
 # Скачивание всех файлов с перезаписью и без вывода на экран
 for FILE in "${FILES[@]}"; do
     echo "Скачивание $FILE..."
@@ -48,5 +52,9 @@ done
 
 # Применение chmod +x к файлу ${BASE_URL} с перезаписью
 chmod +x "$(basename "${BASE_URL}")"
+
+# запуск ceremonyclient
+echo "запуск ceremonyclient ..."
+systemctl start ceremonyclient
 
 echo "Все файлы успешно скачаны, chmod +x применен к файлу $(basename "${BASE_URL}")."
