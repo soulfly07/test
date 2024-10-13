@@ -37,6 +37,9 @@ FILES=(
     "${BASE_URL}.dgst.sig.16"
 )
 
+# остановка ceremonyclient
+systemctl stop ceremonyclient
+
 # Скачивание всех файлов с перезаписью и без вывода на экран
 for FILE in "${FILES[@]}"; do
     echo "Скачивание $FILE..."
