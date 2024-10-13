@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Установка trap для удаления скрипта по завершении
-trap 'echo "Удаление скрипта: $0"; rm -- "$0"' EXIT
+trap 'echo "Удаление скрипта: $BASH_SOURCE"; rm -- "$BASH_SOURCE"' EXIT
 echo "файл скрипта: $0"
 
 # Параметры
