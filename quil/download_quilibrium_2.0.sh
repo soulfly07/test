@@ -39,7 +39,7 @@ FILES=(
 
 # Скачивание всех файлов
 for FILE in "${FILES[@]}"; do
-    echo "Скачивание $FILE..."
+    echo "Скачивание $FILE"
     wget -O "$FILE"
 done
 
