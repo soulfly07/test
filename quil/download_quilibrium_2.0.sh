@@ -38,6 +38,7 @@ FILES=(
 )
 
 # остановка ceremonyclient
+echo "остановка ceremonyclient ... "
 systemctl stop ceremonyclient
 
 # Скачивание всех файлов с перезаписью и без вывода на экран
