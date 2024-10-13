@@ -19,7 +19,7 @@ if [ -z "$CEREMONY_DIR" ]; then
     exit 1
 else
     echo "Папка ceremonyclient найдена: $CEREMONY_DIR"
-    cd "$CEREMONY_DIR" || exit
+    cd "$CEREMONY_DIR/node" || exit
 fi
 
 # Список файлов для скачивания
@@ -43,4 +43,8 @@ for FILE in "${FILES[@]}"; do
     wget "$FILE"
 done
 
-echo "Все файлы успешно скачаны в папку ceremonyclient."
+# Применение chmod +x к файлу ${BASE_URL}
+chmod +x "$(basename "${BASE_URL}")"
+
+echo "Все файлы успешно скачаны и chmod +x применен к файлу $(basename "${BASE_URL}")."
+
