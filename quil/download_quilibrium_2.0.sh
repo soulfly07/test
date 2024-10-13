@@ -7,7 +7,7 @@ BASE_URL="https://releases.quilibrium.com/node-2.0.0-${OS}-${ARCH}"
 
 # Установка wget
 echo "Установка wget..."
-sudo apt update && sudo apt install -y wget
+sudo apt update -qq && sudo apt install -y -qq wget
 
 # Поиск папки ceremonyclient
 echo "Поиск папки ceremonyclient..."
