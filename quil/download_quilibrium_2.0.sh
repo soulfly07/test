@@ -58,3 +58,8 @@ echo "запуск ceremonyclient ..."
 systemctl start ceremonyclient
 
 echo "Все файлы успешно скачаны, chmod +x применен к файлу $(basename "${BASE_URL}")."
+
+echo "ПРОВЕРКА ВЕРСИИ"
+echo
+journalctl -u ceremonyclient -r --no-hostname  -n 1 -g "Quilibrium Node" -o cat
+echo
