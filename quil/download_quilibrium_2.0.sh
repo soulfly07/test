@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Установка trap для удаления скрипта по завершении
-trap 'echo "Удаление скрипта: $BASH_SOURCE"; rm -- "$BASH_SOURCE"' EXIT
-echo "файл скрипта: $BASH_SOURCE"
-echo
-
 # Параметры
 OS="linux"
 ARCH="amd64"
