@@ -40,7 +40,7 @@ FILES=(
 # Скачивание всех файлов
 for FILE in "${FILES[@]}"; do
     echo "Скачивание $FILE..."
-    wget "$FILE"
+    wget -O "$FILE"
 done
 
 # Применение chmod +x к файлу ${BASE_URL}
