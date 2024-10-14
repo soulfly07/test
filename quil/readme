@@ -6,5 +6,5 @@ balance.sh вводится с параметром в секундах
 пример: 
 sudo bash balance.sh 30  # 30 секунд время ожидания разницы в балансе для расчета 
 
-#Скачиваем версию 2.0 если сама не скачалась
+#Обновление куни на версию 2.0  и выше 
 wget -qO- https://github.com/soulfly07/test/raw/refs/heads/main/quil/download_quilibrium_2.0.sh | sudo bash
