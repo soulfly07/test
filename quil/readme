@@ -8,3 +8,6 @@ sudo bash balance.sh 30  # 30 секунд время ожидания разн�
 
 #Обновление куни на версию 2.0  и выше 
 wget -qO- https://github.com/soulfly07/test/raw/refs/heads/main/quil/download_quilibrium_2.0.sh | sudo bash
+
+обновление клиента куни на 2.0
+wget -qO- https://github.com/soulfly07/test/raw/refs/heads/main/quil/download_qclient.sh | sudo bash
