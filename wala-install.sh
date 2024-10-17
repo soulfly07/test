@@ -13,4 +13,4 @@ chmod +x *
 screen -dmS waglaylad ./waglaylad --utxoindex --rpclisten-borsh=public 
 echo "Пауза 30 секунд что бы нода загрузилась, после старта майнер может быть с 0 хешей, значит что нода еще не догнала блоки, просто ждать"
 sleep 30
-screen -dmS waglaylaminer0 ./waglaylaminer --miningaddr waglayla:qq0zvlh9sla62agfnyd86pnzqr9fvyma57lldcae9xa6wpqda7zasu9dl2736
+screen -dmS waglaylaminer0 ./waglaylaminer --miningaddr $1
