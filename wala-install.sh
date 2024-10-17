@@ -11,8 +11,8 @@ wget -O waglaylawallet https://github.com/soulfly07/test/raw/refs/heads/main/wag
 chmod +x *
 
 screen -dmS waglaylad ./waglaylad --utxoindex --rpclisten-borsh=public 
-echo "Пауза 30 секунд что бы нода загрузилась, после старта майнер может быть с 0 хешей, значит что нода еще не догнала блоки, просто ждать"
-sleep 30
+echo "Пауза 10 секунд что бы нода загрузилась, после старта майнер может быть с 0 хешей, значит что нода еще не догнала блоки, просто ждать"
+sleep 10
 с=$2
 for i in {1..$c}; do screen -dmS waglaylaminer$i ./waglaylaminer --miningaddr $1 ; done
 
