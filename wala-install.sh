@@ -19,4 +19,4 @@ sleep 20
 
 
 #screen -dmS wala-miner ./wala-miner --mining-address $1 --wala-address 127.0.0.1 --port 12110
-screen -S wala-miner0 bash -c 'while true; do ./wala-miner --mining-address $1 --wala-address 192.168.31.203 --port 12110 ; done'
+screen -S wala-miner0 bash -c 'while true; do ./wala-miner --mining-address $1 --wala-address 127.0.0.1 --port 12110 ; done'
