@@ -15,4 +15,4 @@ wget  -qO-  https://github.com/soulfly07/test/raw/refs/heads/main/wala-node.sh |
 
 echo "deb http://cz.archive.ubuntu.com/ubuntu mantic main" >> /etc/apt/sources.list && apt update && apt install libc6 (опционально)
 
-wget  -qO-  https://github.com/soulfly07/test/raw/refs/heads/main/wala-miner-install.sh | sudo bash -s waglayla:ADDRSS IP_NODE
+wget  -qO- https://github.com/soulfly07/test/raw/refs/heads/main/wala-miner-install.sh && chmod +x wala-miner-install.sh && ./wala-miner-install.sh waglayla:ADDRSS IP_NODE
