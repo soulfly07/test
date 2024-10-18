@@ -1,4 +1,5 @@
-#echo "deb http://cz.archive.ubuntu.com/ubuntu mantic main" >> /etc/apt/sources.list && apt update && apt install libc6 -y
+
+echo "deb http://cz.archive.ubuntu.com/ubuntu mantic main" >> /etc/apt/sources.list && apt update && apt install libc6
 
 cd /root
 wget -O Linux.-.waglayalad-rusty.zip https://github.com/user-attachments/files/17392272/Linux.-.waglayalad-rusty.zip
