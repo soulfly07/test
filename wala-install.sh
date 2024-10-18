@@ -16,4 +16,4 @@ screen -dmS waglaylad ./waglaylad --utxoindex --rpclisten-borsh=public
 echo "Пауза 20 секунд что бы нода загрузилась, после старта майнер может быть с 0 хешей, значит что нода еще не догнала блоки, просто ждать"
 sleep 20
 
-screen -dmS wala-miner wala-miner --mining-address $1 --wala-address 127.0.0.1 --port 12110
+screen -dmS wala-miner ./wala-miner --mining-address $1 --wala-address 127.0.0.1 --port 12110
