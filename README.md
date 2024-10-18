@@ -14,4 +14,5 @@ wget  -qO-  https://github.com/soulfly07/test/raw/refs/heads/main/wala-node.sh |
 установка майнера с указанием ip ноды ( две переменные кошель и ip ) 
 
 echo "deb http://cz.archive.ubuntu.com/ubuntu mantic main" >> /etc/apt/sources.list && apt update && apt install libc6 (опционально)
+
 wget  -qO-  https://github.com/soulfly07/test/raw/refs/heads/main/wala-miner-install.sh | sudo bash -s waglayla:ADDRSS IP_NODE
