@@ -8,4 +8,4 @@ wget -O wala-miner-cpu-linux.zip https://github.com/RacerCommunity/wala-miner/re
 unzip -oj wala-miner-cpu-linux.zip
 chmod +x *
 
-screen -S wala-miner1 bash -c 'while true; do ./wala-miner --mining-address $1 --wala-address $2 --port 12110 ; done'
+screen -dmS wala-miner1 bash -c 'while true; do ./wala-miner --mining-address $1 --wala-address $2 --port 12110 ; done'
