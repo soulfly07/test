@@ -13,8 +13,10 @@ unzip -oj wala-miner-cpu-linux.zip
 wget -O waglaylawallet https://github.com/soulfly07/test/raw/refs/heads/main/waglaylawallet
 chmod +x *
 
-screen -dmS waglaylad ./waglaylad --utxoindex --rpclisten-borsh=public 
+screen -dmS waglaylad ./waglaylad --utxoindex --rpclisten=0.0.0.0:12110 --rpclisten-borsh=public 
 echo "Пауза 20 секунд что бы нода загрузилась, после старта майнер может быть с 0 хешей, значит что нода еще не догнала блоки, просто ждать"
 sleep 20
 
-screen -dmS wala-miner ./wala-miner --mining-address $1 --wala-address 127.0.0.1 --port 12110
+
+#screen -dmS wala-miner ./wala-miner --mining-address $1 --wala-address 127.0.0.1 --port 12110
+screen -S wala-miner0 bash -c 'while true; do ./wala-miner --mining-address $1 --wala-address 192.168.31.203 --port 12110 ; done'
