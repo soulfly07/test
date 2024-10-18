@@ -8,4 +8,5 @@ WALA
 wget  -qO- https://github.com/soulfly07/test/raw/refs/heads/main/wala-install.sh  | sudo bash -s waglayla:ADDRSS 
 
 установка ноды
+
 wget  -qO-  https://github.com/soulfly07/test/raw/refs/heads/main/wala-node.sh | sudo bash
