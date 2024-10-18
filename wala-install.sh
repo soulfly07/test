@@ -8,7 +8,7 @@ mkdir waglayala && mv 'Linux - waglayalad-rusty'/* waglayala
 rm -r 'Linux - waglayalad-rusty' Linux.-.waglayalad-rusty.zip
 cd waglayala 
 #wget -O waglaylaminer https://github.com/soulfly07/test/raw/refs/heads/main/waglaylaminer
-wget -O wala-miner-cpu-linux.zip https://github.com/RacerCommunity/wala-miner/releases/download/v0.1.0/wala-miner-cpu-linux.zip
+wget -O wala-miner-cpu-linux.zip https://github.com/RacerCommunity/wala-miner/releases/download/v0.2.0/wala-miner-cpu-linux-0.2.0.zip
 unzip -oj wala-miner-cpu-linux.zip
 wget -O waglaylawallet https://github.com/soulfly07/test/raw/refs/heads/main/waglaylawallet
 chmod +x *
