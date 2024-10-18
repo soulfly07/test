@@ -4,7 +4,7 @@
 cd /root
 mkdir -p waglayala
 cd waglayala
-wget -O wala-miner-cpu-linux.zip https://github.com/RacerCommunity/wala-miner/releases/download/v0.1.0/wala-miner-cpu-linux.zip
+wget -O wala-miner-cpu-linux.zip https://github.com/RacerCommunity/wala-miner/releases/download/v0.2.0/wala-miner-cpu-linux-0.2.0.zip
 unzip -oj wala-miner-cpu-linux.zip
 chmod +x *
 
