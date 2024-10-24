@@ -1,3 +1,9 @@
 cd && wget -O q.sh https://github.com/soulfly07/test/raw/refs/heads/main/qubic/q.sh && chmod +x q.sh && ./q.sh 32
 
+CPU Only
+cd && wget -O q.sh https://github.com/soulfly07/test/raw/refs/heads/main/qubic/qcpu.sh  && chmod +x q.sh && ./q.sh 192
+
+
+
+
 cd && wget -O q.sh https://github.com/soulfly07/test/raw/refs/heads/main/qubic/qmk.sh  && chmod +x q.sh && ./q.sh 32
