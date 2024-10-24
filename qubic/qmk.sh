@@ -26,7 +26,7 @@ cat <<EOF > appsettings.json
     "baseUrl": "https://wps.qubic.li",
     "alias": "$WORKER",
     "trainer": {
-      "cpu": false,
+      "cpu": true,
       "gpu": true,
       "gpuVersion": "CUDA12",
       "cpuVersion": "",
