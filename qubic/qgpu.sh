@@ -26,7 +26,7 @@ cat <<EOF > appsettings.json
       "gpu": true,
       "gpuVersion": "CUDA12",
       "cpuVersion": "",
-      "cpuThreads": ""
+      "cpuThreads": 0
     },
     "isPps": false,
     "useLiveConnection": true,
