@@ -27,7 +27,7 @@ cat <<EOF > appsettings.json
       "cpuVersion": "",
       "cpuThreads": $1
     },
-    "isPps": false,
+    "isPps": true,
     "useLiveConnection": true,
     "accessToken": "$TOKEN",
     "idleSettings": null
