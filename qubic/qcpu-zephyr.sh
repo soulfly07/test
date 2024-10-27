@@ -35,7 +35,7 @@ cat <<EOF > appsettings.json
     "useLiveConnection": true,
     "accessToken": "$TOKEN",
     "idleSettings": {
-      "command": " ~/qub/SRBMiner-Multi-2-6-9/SRBMiner-MULTI",
+      "command": "SRBMiner-Multi-2-6-9/SRBMiner-MULTI",
       "arguments": "--algorithm randomx --pool de.zephyr.herominers.com:1123 --wallet ZEPHs98Ej1cjbSXLAtbHYk3RMsL4RYWPfioWaPKx54ue7AimsXZP2R3eGwAnwwrwD9R8ads8GmkC88CoEQ96t3XUW27q15A7ur6 --password $(hostname)"
     }
    }
