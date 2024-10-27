@@ -9,8 +9,8 @@ sudo apt install screen -y
 sudo apt install -y nano tar zip -y
 sudo apt install screen xz-utils -y 
 cd ~
-mkdir qub 
-cd qub
+mkdir qub-zephyr 
+cd qub-zephyr
 
 wget -O qli-Client.tar.gz https://dl.qubic.li/downloads/qli-Client-2.2.1-Linux-x64.tar.gz
 tar -xvzf qli-Client.tar.gz
