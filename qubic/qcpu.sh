@@ -4,8 +4,9 @@ TOKEN="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjVlYmI3YWQ1LTkzZjgtNDNjMi1h
 
 WORKER=$(hostname) 
 
-apt install screen -y
-apt install -y nano
+apt install sudo
+sudo apt install screen -y
+sudo apt install -y nano
 cd ~
 mkdir qub 
 cd qub
