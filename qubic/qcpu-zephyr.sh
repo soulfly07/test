@@ -42,4 +42,11 @@ cat <<EOF > appsettings.json
 }
 EOF
 
-screen -S qub ./qli-Client
+if ! command -v ts &> /dev/null; then
+    echo "Program ts (moreutils) - not installed. ts is required. Installing..."
+    cd /tmp/ && wget -O ts https://raw.githubusercontent.com/Worm/moreutils/master/ts && sudo mv ts /usr/local/bin && sudo chmod 777 /usr/local/bin/ts
+    echo "Program ts (moreutils) - has been installed."
+fi
+
+
+    screen -S ./qli-Client | ts | tee --append miner.log
