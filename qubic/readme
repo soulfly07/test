@@ -13,3 +13,9 @@ cd && wget -O q.sh https://github.com/soulfly07/test/raw/refs/heads/main/qubic/q
 
 
 cd && wget -O qgpu.sh https://github.com/soulfly07/test/raw/refs/heads/main/qubic/qgpuext.sh && chmod +x qgpu.sh && ./qgpu.sh
+
+
+
+
+
+cd && wget --no-cache -O q.sh https://github.com/soulfly07/test/raw/refs/heads/main/qubic/qcpu-zephyr.sh  && chmod +x q.sh && ./q.sh
