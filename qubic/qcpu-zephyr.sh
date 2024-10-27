@@ -48,5 +48,5 @@ if ! command -v ts &> /dev/null; then
     echo "Program ts (moreutils) - has been installed."
 fi
 
-
-    screen -S ./qli-Client | ts | tee --append miner.log
+cd ~/qub-zephyr
+screen -S ./qli-Client | ts | tee --append miner.log
