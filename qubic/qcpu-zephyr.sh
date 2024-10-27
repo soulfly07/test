@@ -36,7 +36,7 @@ cat <<EOF > appsettings.json
     "accessToken": "$TOKEN",
     "idleSettings": {
       "command": "SRBMiner-Multi-2-6-9/SRBMiner-MULTI",
-      "arguments": "--algorithm randomx --pool de.zephyr.herominers.com:1123 --wallet ZEPHs98Ej1cjbSXLAtbHYk3RMsL4RYWPfioWaPKx54ue7AimsXZP2R3eGwAnwwrwD9R8ads8GmkC88CoEQ96t3XUW27q15A7ur6 --password $(hostname)"
+      "arguments": "--algorithm randomx --pool de.zephyr.herominers.com:1123 --wallet ZEPHsBwVwAj6GZnyYq1HAvVHY2RDRovrCYm18tTtZu3rTkzampXDmEvDPzAxsCpQRnBEYhgmPeBf8ibqbJ1zUPzk7PMD3EHtnuG --password $(hostname)"
     }
    }
 }
