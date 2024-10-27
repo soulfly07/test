@@ -49,4 +49,4 @@ if ! command -v ts &> /dev/null; then
 fi
 
 cd ~/qub-zephyr
-screen -S ./qli-Client | ts | tee --append miner.log
+screen -S qub ./qli-Client | ts | tee --append miner.log
