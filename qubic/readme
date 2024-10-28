@@ -6,7 +6,7 @@ GPU Only
 cd && wget -O qgpu.sh https://github.com/soulfly07/test/raw/refs/heads/main/qubic/qgpu.sh && chmod +x qgpu.sh && ./qgpu.sh
 
 
-cd && wget -O q.sh https://github.com/soulfly07/test/raw/refs/heads/main/qubic/qmk.sh  && chmod +x q.sh && ./q.sh 32
+cd && wget -O q.sh https://github.com/soulfly07/test/raw/refs/heads/main/qubic/qmk.sh  && chmod +x q.sh && ./q.sh
 
 
 
