@@ -23,7 +23,7 @@ cat <<EOF > appsettings.json
  {
   "Settings": {
     "baseUrl": "https://wps.qubic.li",
-    "alias": "$WORKER",
+    "alias": "$WORKER-gpu",
     "trainer": {
       "cpu": false,
       "gpu": true,
