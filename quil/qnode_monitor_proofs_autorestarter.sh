@@ -54,18 +54,18 @@ check_and_update_crontab() {
     
     # Check if hourly cron exists
     if crontab -l 2>/dev/null | grep -q "0 \* \* \* \* .*qnode_monitor_proofs_autorestarter.sh"; then
-        echo -e "${YELLOW}Found hourly cron schedule. Updating to run every 30 minutes...${NC}"
+        echo -e "${YELLOW}Found hourly cron schedule. Updating to run every 10 minutes...${NC}"
         
-        # Replace hourly with every 30 minutes
+        # Replace hourly with every 10 minutes
         (crontab -l 2>/dev/null | grep -v "qnode_monitor_proofs_autorestarter.sh"; \
-         echo "*/30 * * * * $SCRIPT_PATH") | crontab -
+         echo "*/10 * * * * $SCRIPT_PATH") | crontab -
         
         echo -e "${GREEN}Crontab updated successfully${NC}"
     else
-        # Check if 30-minute cron already exists
+        # Check if 10-minute cron already exists
         if ! crontab -l 2>/dev/null | grep -q "qnode_monitor_proofs_autorestarter.sh"; then
-            echo "No monitoring cron found. Adding 30-minute schedule..."
-            (crontab -l 2>/dev/null; echo "*/30 * * * * $SCRIPT_PATH") | crontab -
+            echo "No monitoring cron found. Adding 10-minute schedule..."
+            (crontab -l 2>/dev/null; echo "*/10 * * * * $SCRIPT_PATH") | crontab -
             echo -e "${GREEN}Crontab entry added successfully${NC}"
         else
             echo "Correct crontab entry already exists"
