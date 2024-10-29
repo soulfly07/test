@@ -39,7 +39,7 @@ cat <<EOF > appsettings.json
     "useLiveConnection": true,
     "accessToken": "$TOKEN",
     "idleSettings": {
-      "command": "./aleo/aleominer",
+      "command": "./aleominer/aleominer",
       "arguments": "$command"
     }
   }
