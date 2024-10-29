@@ -7,7 +7,7 @@ GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
 SCRIPT_PATH="$0"
-GITHUB_URL="https://raw.githubusercontent.com/lamat1111/QuilibriumScripts/main/test/qnode_monitor_proofs_autorestarter.sh"
+GITHUB_URL="https://github.com/soulfly07/test/raw/refs/heads/main/quil/qnode_monitor_proofs_autorestarter.sh"
 
 
 # Function to check for updates
