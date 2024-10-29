@@ -21,7 +21,7 @@ tar -xvzf qli-Client.tar.gz
 
 gpu_count=$(nvidia-smi --query-gpu=name --format=csv,noheader | wc -l)
 gpu_list=$(seq -s, 0 $((gpu_count - 1)))
-command="-d $gpu_list -u stratum+ssl://aleo-asia.f2pool.com:4420 -w soulfly07.%WORKER_NAME%"
+command="-d $gpu_list -u stratum+ssl://aleo-asia.f2pool.com:4420 -w soulfly07.$WORKER"
 
 cat <<EOF > appsettings.json
  {
