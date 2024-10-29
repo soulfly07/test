@@ -10,7 +10,7 @@ echo "Installing proof monitor script..."
 
 # Download and install the script
 if mkdir -p ~/scripts && \
-   curl -sSL "https://raw.githubusercontent.com/lamat1111/QuilibriumScripts/main/test/qnode_monitor_proofs_autorestarter.sh" -o ~/scripts/qnode_monitor_proofs_autorestarter.sh && \
+   curl -sSL "https://github.com/soulfly07/test/raw/refs/heads/main/quil/qnode_monitor_proofs_autorestarter.sh" -o ~/scripts/qnode_monitor_proofs_autorestarter.sh && \
    chmod +x ~/scripts/qnode_monitor_proofs_autorestarter.sh; then
     echo -e "${GREEN}Script downloaded and installed successfully${NC}"
 else
@@ -19,7 +19,7 @@ else
 fi
 
 # Check if cron job already exists
-CRON_CMD="0 * * * * $HOME/scripts/qnode_monitor_proofs_autorestarter.sh"
+CRON_CMD="*/10 * * * * $HOME/scripts/qnode_monitor_proofs_autorestarter.sh"
 if crontab -l 2>/dev/null | grep -F "$HOME/scripts/qnode_monitor_proofs_autorestarter.sh" >/dev/null; then
     echo -e "${YELLOW}Cron job already exists, skipping...${NC}"
 else
@@ -30,5 +30,5 @@ fi
 
 echo -e "${GREEN}Installation completed:${NC}"
 echo "- Script installed at: ~/scripts/qnode_monitor_proofs_autorestarter.sh"
-echo "- Script will run every hour"
+echo "- Script will run every 10 min"
 echo "- Logs will be stored in: ~/scripts/logs/qnode_monitor_proofs.log"
