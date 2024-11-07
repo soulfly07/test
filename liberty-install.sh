@@ -23,8 +23,9 @@ curl -L "$GENESIS_URL" -o "$INSTALL_DIR/genesis.json"
 echo "Initializing node with Genesis file..."
 geth --datadir "$INSTALL_DIR" init "$INSTALL_DIR/genesis.json"
 
-# Step 5: Prompt for miner address
+# Step 5: Prompt for miner address and threads
 read -p "Enter miner address: " MINER_ADDRESS
+read -p "Enter miner threads: " MINER_THREADS
 
 # Step 6: Create systemd service
 echo "Creating systemd service for Liberty node..."
@@ -42,7 +43,7 @@ ExecStart=/usr/local/bin/geth --datadir $INSTALL_DIR \\
 --port 40404 \\
 --http.api debug,web3,eth,txpool,net \\
 --mine \\
---miner.threads 1 \\
+--miner.threads $MINER_THREADS \\
 --miner.etherbase $MINER_ADDRESS \\
 --gcmode archive \\
 --bootnodes "enode://8b7cf2ff6d30e7fe7f1b8bfd67193844504144cb002f1a369326d8cd16227f2c2a0a73ee0e658dac2663b92e1af7e2fbae8a46388dfd5db602f704ee56ca8d57@94.142.138.78:40404"
