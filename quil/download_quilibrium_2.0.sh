@@ -11,7 +11,7 @@ GREEN='\033[0;32m'
 NC='\033[0m' # Сброс цвета
 
 # Установка необходимых утилит
-echo "Установка необходимых утилит (wget, curl)..."
+echo "Установка необходимых утилит ..."
 sudo apt update -qq && sudo apt install -y -qq wget curl
 
 # Оставнока ceremonyclient
