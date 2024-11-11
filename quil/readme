@@ -12,6 +12,8 @@ wget -qO- https://github.com/soulfly07/test/raw/refs/heads/main/quil/download_qu
 Новая версия обновления, с проверкой 
 wget -qO- https://github.com/soulfly07/test/raw/refs/heads/main/quil/upgrade-quilibrium-2.0.sh | sudo bash
 
+Скачивает скрипт обновления, что выше,  в папку с нодой , так же вставляет в крон запуск данного скрипта на проверку версии
+wget -qO- https://github.com/soulfly07/test/raw/refs/heads/main/quil/autoupgrade_cron_quilibrium-2.0.sh | sudo bash
 
 обновление клиента куни на 2.0
 wget -qO- https://github.com/soulfly07/test/raw/refs/heads/main/quil/download_qclient.sh | sudo bash
