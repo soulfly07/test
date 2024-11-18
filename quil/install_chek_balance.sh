@@ -51,3 +51,4 @@ if ! grep -Fq "$CRON_JOB" /hive/etc/crontab.root 2>/dev/null; then
 else
     echo "Запись уже существует в /hive/etc/crontab.root"
 fi
+cat ~/ceremonyclient/node/balance.log
