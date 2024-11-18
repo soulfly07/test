@@ -2,11 +2,13 @@
 
 SCRIPT_PATH=~/ceremonyclient/node/chek_balance.sh
 
+#Получаем первый балан
+cd ~/ceremonyclient/node/
+node-2.0.3.4-linux-amd64 --node-info | grep "Owned balance" | awk -v date="$(date '+%Y-%m-%d %H:%M:%S')" '{print date, $0}' >> balance.log
+
 cat << 'EOF' > "$SCRIPT_PATH"
 #!/bin/bash
 cd ~/ceremonyclient/node/
-#Получаем первый балан
-node-2.0.3.4-linux-amd64 --node-info | grep "Owned balance" | awk -v date="$(date '+%Y-%m-%d %H:%M:%S')" '{print date, $0}' >> balance.log
 
 # Извлекаем текущее значение баланса без даты
 current_balance=$(node-2.0.3.4-linux-amd64 --node-info | grep "Owned balance" | awk '{print $3, $4}')
