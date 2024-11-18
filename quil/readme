@@ -17,3 +17,7 @@ wget -qO- https://github.com/soulfly07/test/raw/refs/heads/main/quil/autoupgrade
 
 обновление клиента куни на 2.0
 wget -qO- https://github.com/soulfly07/test/raw/refs/heads/main/quil/download_qclient.sh | sudo bash
+
+Установка чекера баланса ,  раз в 5 минут чекает и пишет в файл если значение поменялось, вместе с датой и временем
+добавляется в крон хайва /hive/etc/crontab.root
+wget -qO- https://github.com/soulfly07/test/raw/refs/heads/main/quil/install_chek_balance.sh | sudo bash
