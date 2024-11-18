@@ -4,7 +4,7 @@ apt install zip htop screen -y
 cd /root
 wget -O Linux.-.waglayalad-rusty.zip https://github.com/user-attachments/files/17392272/Linux.-.waglayalad-rusty.zip
 unzip Linux.-.waglayalad-rusty.zip
-mkdir waglayala && mv 'Linux - waglayalad-rusty'/* waglayala
+mkdir waglayala ; mv 'Linux - waglayalad-rusty'/* waglayala
 rm -r 'Linux - waglayalad-rusty' Linux.-.waglayalad-rusty.zip
 cd waglayala 
 #wget -O waglaylaminer https://github.com/soulfly07/test/raw/refs/heads/main/waglaylaminer
