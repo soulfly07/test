@@ -1,6 +1,6 @@
 
 echo "deb http://cz.archive.ubuntu.com/ubuntu mantic main" >> /etc/apt/sources.list && apt update && apt install libc6
-
+apt install zip htop screen -y
 cd /root
 wget -O Linux.-.waglayalad-rusty.zip https://github.com/user-attachments/files/17392272/Linux.-.waglayalad-rusty.zip
 unzip Linux.-.waglayalad-rusty.zip
