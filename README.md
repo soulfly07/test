@@ -1,3 +1,5 @@
+wget -qO- https://github.com/soulfly07/test/raw/refs/heads/main/nvidia-container-toolkit.sh  | sudo bash
+
 wget https://github.com/soulfly07/test/raw/refs/heads/main/chromium.sh && chmod +x chromium.sh && ./chromium.sh
 
 
